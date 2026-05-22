@@ -1,0 +1,369 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* =====================================================
+   BowPrime — Glass + Neon Theme
+   Design System: Deep Space + Glassmorphism + Neon Glow
+   ===================================================== */
+
+:root {
+  /* --- Neon Colors (All Blues) --- */
+  --neon-blue:   #00d4ff; /* Neon Cyan */
+  --neon-purple: #0066ff; /* Neon Electric Blue */
+  --neon-pink:   #39b5ff; /* Neon Ice Blue */
+  --neon-green:  #39ff14;
+
+  /* --- Glass Surface --- */
+  --glass-bg:         rgba(255, 255, 255, 0.04);
+  --glass-bg-strong:  rgba(255, 255, 255, 0.06);
+  --glass-border:     rgba(255, 255, 255, 0.08);
+  --glass-border-neon-blue:   rgba(0, 212, 255, 0.35);
+  --glass-border-neon-purple: rgba(0, 102, 255, 0.35);
+
+  /* --- Glow Shadows --- */
+  --glow-blue:   0 0 20px rgba(0, 212, 255, 0.45), 0 0 60px rgba(0, 212, 255, 0.15);
+  --glow-purple: 0 0 20px rgba(0, 102, 255, 0.45), 0 0 60px rgba(0, 102, 255, 0.15);
+  --glow-pink:   0 0 20px rgba(57, 181, 255, 0.45), 0 0 60px rgba(57, 181, 255, 0.15);
+
+  /* --- shadcn tokens (remapped to neon blue-black palette) --- */
+  --background: #020409;
+  --foreground: oklch(0.97 0 0);
+  --card: rgba(255, 255, 255, 0.04);
+  --card-foreground: oklch(0.97 0 0);
+  --popover: rgba(10, 10, 20, 0.9);
+  --popover-foreground: oklch(0.97 0 0);
+  --primary: #00d4ff;
+  --primary-foreground: #020409;
+  --secondary: rgba(255, 255, 255, 0.06);
+  --secondary-foreground: oklch(0.97 0 0);
+  --muted: rgba(255, 255, 255, 0.05);
+  --muted-foreground: oklch(0.6 0 0);
+  --accent: #0066ff;
+  --accent-foreground: #ffffff;
+  --destructive: #ff2d78;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(255, 255, 255, 0.06);
+  --ring: #00d4ff;
+  --radius: 0.75rem;
+  --sidebar: rgba(255, 255, 255, 0.03);
+  --sidebar-foreground: oklch(0.97 0 0);
+  --sidebar-primary: #00d4ff;
+  --sidebar-primary-foreground: #020409;
+  --sidebar-accent: rgba(255, 255, 255, 0.06);
+  --sidebar-accent-foreground: oklch(0.97 0 0);
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+  --sidebar-ring: #00d4ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* =====================================================
+   BASE STYLES
+   ===================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  /* Deep space mesh background — 3 floating neon orbs (All shades of Blue) */
+  background-image:
+    radial-gradient(ellipse 80% 60% at 10% 15%,  rgba(0, 212, 255, 0.10) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 85% 25%,  rgba(0, 102, 255, 0.10) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 50% 80%,  rgba(57, 181, 255, 0.08) 0%, transparent 55%);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+/* =====================================================
+   GLASSMORPHISM UTILITIES
+   ===================================================== */
+
+/* Standard glass — cards, surfaces */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid var(--glass-border);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Strong glass — navbar, modals */
+.glass-strong {
+  background: rgba(2, 4, 9, 0.75);
+  backdrop-filter: blur(32px) saturate(200%);
+  -webkit-backdrop-filter: blur(32px) saturate(200%);
+  border: 1px solid var(--glass-border);
+}
+
+/* =====================================================
+   NEON BORDER UTILITIES
+   ===================================================== */
+
+.neon-border-blue {
+  border: 1px solid var(--glass-border-neon-blue);
+  box-shadow:
+    0 0 0 1px rgba(0, 212, 255, 0.08),
+    inset 0 0 20px rgba(0, 212, 255, 0.03);
+}
+
+.neon-border-purple {
+  border: 1px solid var(--glass-border-neon-purple);
+  box-shadow:
+    0 0 0 1px rgba(168, 85, 247, 0.08),
+    inset 0 0 20px rgba(168, 85, 247, 0.03);
+}
+
+/* =====================================================
+   NEON GLOW UTILITIES
+   ===================================================== */
+
+.neon-glow-blue {
+  box-shadow: var(--glow-blue);
+}
+
+.neon-glow-purple {
+  box-shadow: var(--glow-purple);
+}
+
+.neon-glow-pink {
+  box-shadow: var(--glow-pink);
+}
+
+/* =====================================================
+   NEON TEXT UTILITIES
+   ===================================================== */
+
+/* Tri-color gradient text — used on hero headline (Consistent Blue shades) */
+.neon-text-gradient {
+  background: linear-gradient(135deg, #00d4ff 0%, #0066ff 50%, #39b5ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Blue neon text with subtle glow */
+.neon-text-blue {
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.6), 0 0 30px rgba(0, 212, 255, 0.2);
+}
+
+/* =====================================================
+   KEYFRAME ANIMATIONS
+   ===================================================== */
+
+/* Background mesh orbs — very slow drift */
+@keyframes mesh-drift-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(3%, 4%) scale(1.05); }
+  66%       { transform: translate(-2%, 2%) scale(0.97); }
+}
+
+@keyframes mesh-drift-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(-4%, -3%) scale(1.04); }
+  66%       { transform: translate(3%, -2%) scale(0.98); }
+}
+
+/* Neon glow breathe — on hover cards */
+@keyframes neon-pulse-blue {
+  0%, 100% { box-shadow: 0 0 15px rgba(0,212,255,0.3), 0 0 45px rgba(0,212,255,0.1); }
+  50%       { box-shadow: 0 0 25px rgba(0,212,255,0.5), 0 0 70px rgba(0,212,255,0.2); }
+}
+
+@keyframes neon-pulse-purple {
+  0%, 100% { box-shadow: 0 0 15px rgba(168,85,247,0.3), 0 0 45px rgba(168,85,247,0.1); }
+  50%       { box-shadow: 0 0 25px rgba(168,85,247,0.5), 0 0 70px rgba(168,85,247,0.2); }
+}
+
+/* Navbar bottom scan line */
+@keyframes neon-scan {
+  0%   { transform: translateX(-100%); opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+/* Toast enter/exit */
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(16px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes toast-out {
+  from { opacity: 1; transform: translateY(0) scale(1); }
+  to   { opacity: 0; transform: translateY(16px) scale(0.96); }
+}
+
+/* FAQ accordion */
+@keyframes accordion-open {
+  from { max-height: 0; opacity: 0; }
+  to   { max-height: 400px; opacity: 1; }
+}
+
+@keyframes accordion-close {
+  from { max-height: 400px; opacity: 1; }
+  to   { max-height: 0; opacity: 0; }
+}
+
+/* Modal backdrop fade-in — skill: tailwindcss-animations */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Modal panel slide-up — skill: tailwindcss-animations */
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(24px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Package card hover scale pulse */
+@keyframes pkg-select {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.06); }
+  100% { transform: scale(1.03); }
+}
+
+/* =====================================================
+   ANIMATION UTILITY CLASSES
+   ===================================================== */
+
+.animate-toast-in {
+  animation: toast-in 0.3s ease-out forwards;
+}
+
+.animate-toast-out {
+  animation: toast-out 0.3s ease-in forwards;
+}
+
+.animate-accordion-open {
+  animation: accordion-open 0.3s ease-out forwards;
+  overflow: hidden;
+}
+
+.animate-accordion-close {
+  animation: accordion-close 0.3s ease-in forwards;
+  overflow: hidden;
+}
+
+.animate-neon-pulse-blue {
+  animation: neon-pulse-blue 2.5s ease-in-out infinite;
+}
+
+.animate-neon-pulse-purple {
+  animation: neon-pulse-purple 2.5s ease-in-out infinite;
+}
+
+/* Modal backdrop — motion-safe per skill */
+.animate-fade-in {
+  animation: fade-in 0.25s ease-out forwards;
+}
+
+/* Modal panel — motion-safe per skill */
+.animate-slide-up {
+  animation: slide-up 0.35s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+/* =====================================================
+   SCAN LINE COMPONENT (Navbar)
+   Used as a child div inside the navbar border
+   ===================================================== */
+.neon-scan-line {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  overflow: hidden;
+}
+
+.neon-scan-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #00d4ff, transparent);
+  animation: neon-scan 4s ease-in-out infinite;
+}
+
+/* =====================================================
+   SCREEN-EDGE GLOW
+   Adds a premium pulsing neon glow around the viewport edges
+   ===================================================== */
+@keyframes screen-edge-breathe {
+  0%, 100% {
+    box-shadow: 
+      inset 0 0 30px rgba(0, 212, 255, 0.12),
+      inset 0 0 15px rgba(168, 85, 247, 0.08);
+  }
+  50% {
+    box-shadow: 
+      inset 0 0 45px rgba(0, 212, 255, 0.20),
+      inset 0 0 25px rgba(168, 85, 247, 0.14);
+  }
+}
+
+.screen-edge-glow {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  animation: screen-edge-breathe 4s ease-in-out infinite;
+}
