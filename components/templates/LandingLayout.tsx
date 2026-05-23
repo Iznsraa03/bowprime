@@ -1,4 +1,4 @@
-import { Zap } from "lucide-react";
+import Image from "next/image";
 import Button from "@/components/atoms/Button";
 import Link from "next/link";
 
@@ -20,8 +20,15 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#00d4ff] to-[#0066ff] [box-shadow:0_0_15px_rgba(0,212,255,0.4)] transition-all duration-300 group-hover:[box-shadow:0_0_25px_rgba(0,102,255,0.6)]">
-              <Zap size={16} className="text-white" />
+            {/* skill: nextjs-shadcn — use Next.js <Image /> for optimised local assets */}
+            <div className="relative h-8 w-8 overflow-hidden rounded-lg [box-shadow:0_0_15px_rgba(0,212,255,0.4)] transition-all duration-300 group-hover:[box-shadow:0_0_25px_rgba(0,102,255,0.6)]">
+              <Image
+                src="/logo/logo.jpeg"
+                alt="BowPrime Logo"
+                fill
+                className="object-cover"
+                sizes="32px"
+              />
             </div>
             <span className="text-base font-semibold text-white tracking-tight">
               Bow<span className="neon-text-gradient">Prime</span>
@@ -31,7 +38,7 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
           {/* Nav links */}
           <div className="hidden items-center gap-8 md:flex">
             {[
-              { label: "Toko", href: "/stores" },
+              { label: "Keunggulan", href: "/#about" },
               { label: "Testimoni", href: "/#testimonials" },
               { label: "FAQ", href: "/#faq" },
             ].map((link) => (
@@ -69,8 +76,14 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
           <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
             {/* Logo */}
             <div className="flex items-center gap-2">
-              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-[#00d4ff] to-[#0066ff]">
-                <Zap size={14} className="text-white" />
+              <div className="relative h-7 w-7 overflow-hidden rounded-lg">
+                <Image
+                  src="/logo/logo.jpeg"
+                  alt="BowPrime Logo"
+                  fill
+                  className="object-cover"
+                  sizes="28px"
+                />
               </div>
               <span className="text-sm font-semibold text-white">
                 Bow<span className="neon-text-gradient">Prime</span>
