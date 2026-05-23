@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Agents & Guides
+.agents/
+AGENTS.md
+CLAUDE.md
+VPS_DEPLOYMENT_GUIDE.md

@@ -22,37 +22,34 @@ export default function HeroSection() {
             <div className="mb-5 inline-flex items-center gap-2 rounded-full glass neon-border-blue px-4 py-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-[#00d4ff] animate-pulse [box-shadow:0_0_6px_rgba(0,212,255,0.9)]" />
               <span className="text-xs font-medium text-[#00d4ff] [text-shadow:0_0_8px_rgba(0,212,255,0.5)]">
-                3 Specialized Stores, One Hub
+                3 Toko Spesialis, Satu Pusat
               </span>
             </div>
 
             {/* Headline — neon tri-color gradient */}
             <Heading level={1} className="mb-6 leading-tight">
-              Instant & Secure{" "}
+              Top-Up Game{" "}
               <span className="neon-text-gradient">
-                Gaming Top-Up
+                Instan & Aman
               </span>
             </Heading>
 
             <p className="mb-10 max-w-lg text-base leading-relaxed text-white/55 sm:text-lg">
-              Welcome to BowPrime, your premium portal for instant digital top-ups. Access our three dedicated redirect stores for mobile gaming, PC/console vouchers, and entertainment gift cards.
+              Selamat datang di BowPrime, portal premium Anda untuk top-up digital instan. Akses tiga toko khusus kami untuk game mobile, voucher PC/konsol, dan kartu hadiah hiburan.
             </p>
 
             <div className="flex flex-wrap gap-4">
               <Button href="/stores" size="lg">
-                Explore Stores
-              </Button>
-              <Button href="#about" variant="ghost" size="lg">
-                Learn More
+                Jelajahi Toko
               </Button>
             </div>
 
             {/* Stats row */}
             <div className="mt-12 flex gap-8">
               {[
-                { label: "Specialized Stores", value: "3" },
-                { label: "Supported Games", value: "100+" },
-                { label: "Success Rate", value: "99.9%" },
+                { label: "Toko Spesialis", value: "3" },
+                { label: "Game Didukung", value: "100+" },
+                { label: "Tingkat Keberhasilan", value: "99.9%" },
               ].map((stat) => (
                 <div key={stat.label}>
                   <p className="text-2xl font-bold neon-text-gradient">{stat.value}</p>

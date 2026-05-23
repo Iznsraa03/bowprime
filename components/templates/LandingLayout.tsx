@@ -31,8 +31,8 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
           {/* Nav links */}
           <div className="hidden items-center gap-8 md:flex">
             {[
-              { label: "Stores", href: "/stores" },
-              { label: "Testimonials", href: "/#testimonials" },
+              { label: "Toko", href: "/stores" },
+              { label: "Testimoni", href: "/#testimonials" },
               { label: "FAQ", href: "/#faq" },
             ].map((link) => (
               <Link
@@ -47,7 +47,7 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
 
           {/* CTA */}
           <Button href="/stores" size="sm">
-            Get Started
+            Mulai Sekarang
           </Button>
         </nav>
       </header>
@@ -79,7 +79,7 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
 
             {/* Footer links */}
             <div className="flex gap-6">
-              {["Privacy", "Terms", "Contact"].map((item) => (
+              {["Privasi", "Ketentuan", "Kontak"].map((item) => (
                 <a
                   key={item}
                   href="#"
@@ -92,7 +92,7 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
 
             {/* Copyright */}
             <p className="text-xs text-white/20">
-              &copy; {new Date().getFullYear()} BowPrime. All rights reserved.
+              &copy; {new Date().getFullYear()} BowPrime. Hak cipta dilindungi undang-undang.
             </p>
           </div>
         </div>

@@ -7,8 +7,8 @@ const testimonials: Testimonial[] = [
     avatar: "SC",
     rating: 5,
     quote:
-      "MLBB diamonds were delivered to my game account in less than 2 minutes! BowPrime Mobile is incredibly fast and cheap.",
-    storeName: "BowPrime Mobile",
+      "Chip Royal Dream langsung dikirim ke akun game saya kurang dari 2 menit! Daboy Store luar biasa cepat dan murah.",
+    storeName: "Daboy Store",
   },
   {
     id: "t2",
@@ -16,8 +16,8 @@ const testimonials: Testimonial[] = [
     avatar: "MT",
     rating: 5,
     quote:
-      "Bought Steam Wallet codes for the summer sale and got the codes instantly. Extremely secure redirect and checkout!",
-    storeName: "BowPrime PC & Console",
+      "Beli koin emas Royal Dream pas promo dan langsung masuk instan. Pengalihan dan pembayaran di Aloy Store sangat aman!",
+    storeName: "Aloy Store",
   },
   {
     id: "t3",
@@ -25,8 +25,8 @@ const testimonials: Testimonial[] = [
     avatar: "AR",
     rating: 5,
     quote:
-      "Got Discord Nitro and Netflix gift cards here. Seamless redirect, instantly delivered to my email. Will buy again!",
-    storeName: "BowPrime Digital Hub",
+      "Beli chip di Walid Store prosesnya mulus sekali lewat WhatsApp, langsung diproses dan fast response. Pasti beli lagi di sini!",
+    storeName: "Walid Store",
   },
   {
     id: "t4",
@@ -34,8 +34,8 @@ const testimonials: Testimonial[] = [
     avatar: "JM",
     rating: 5,
     quote:
-      "Ordered Garena Shells and FF Diamonds. Entered UID, paid via QRIS, and they showed up instantly in-game. Flawless service.",
-    storeName: "BowPrime Mobile",
+      "Pesan paket chip di Daboy Store. Masukkan ID, bayar instan, langsung bertambah di dalam game. Pelayanan tanpa cela.",
+    storeName: "Daboy Store",
   },
   {
     id: "t5",
@@ -43,8 +43,8 @@ const testimonials: Testimonial[] = [
     avatar: "PN",
     rating: 4,
     quote:
-      "Valorant Points were processed within seconds of checkout. Rates are very competitive compared to other platforms.",
-    storeName: "BowPrime PC & Console",
+      "Top-up di Aloy Store diproses dalam hitungan detik setelah konfirmasi transfer. Harganya sangat bersaing dibanding toko lain.",
+    storeName: "Aloy Store",
   },
   {
     id: "t6",
@@ -52,8 +52,8 @@ const testimonials: Testimonial[] = [
     avatar: "DK",
     rating: 5,
     quote:
-      "Purchased a Spotify Premium 12-month voucher. Code arrived in my email inbox immediately. Very easy and secure transaction.",
-    storeName: "BowPrime Digital Hub",
+      "Beli koin di Walid Store. Fast response, transaksinya sangat mudah dan aman. Sangat direkomendasikan.",
+    storeName: "Walid Store",
   },
 ];
 

@@ -3,33 +3,33 @@ import { ToastMessage } from "@/src/types";
 const toastMessages: ToastMessage[] = [
   {
     id: "toast-1",
-    message: "Ahmed just topped up 500 MLBB Diamonds",
-    storeName: "BowPrime Mobile",
+    message: "Ahmed baru saja melakukan top-up 500M Royal Dream",
+    storeName: "Daboy Store",
   },
   {
     id: "toast-2",
-    message: "Siti just purchased a $50 Steam Wallet Card",
-    storeName: "BowPrime PC & Console",
+    message: "Siti baru saja membeli 1B Royal Dream",
+    storeName: "Aloy Store",
   },
   {
     id: "toast-3",
-    message: "Raju just bought 3-Months Discord Nitro",
-    storeName: "BowPrime Digital Hub",
+    message: "Raju baru saja membeli 500M Royal Dream",
+    storeName: "Walid Store",
   },
   {
     id: "toast-4",
-    message: "Lisa just topped up 1420 Valorant Points",
-    storeName: "BowPrime PC & Console",
+    message: "Lisa baru saja melakukan top-up 200M Royal Dream",
+    storeName: "Aloy Store",
   },
   {
     id: "toast-5",
-    message: "Kevin just bought 960 Garena Shells",
-    storeName: "BowPrime Mobile",
+    message: "Kevin baru saja membeli 300M Royal Dream",
+    storeName: "Daboy Store",
   },
   {
     id: "toast-6",
-    message: "Maya just purchased a $25 Google Play Gift Card",
-    storeName: "BowPrime Digital Hub",
+    message: "Maya baru saja membeli 2B Royal Dream",
+    storeName: "Walid Store",
   },
 ];
 

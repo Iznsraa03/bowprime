@@ -7,33 +7,33 @@ export default function AboutSection() {
     {
       id: "feature-speed",
       icon: "Zap",
-      title: "Instant Redirects",
+      title: "Pengalihan Instan",
       description:
-        "Skip the wait. Our high-performance automated link routing redirects you straight to specialized checkouts in less than 2 seconds.",
+        "Tanpa antre. Rute tautan otomatis berkinerja tinggi kami mengarahkan Anda langsung ke pembayaran khusus dalam waktu kurang dari 2 detik.",
       accent: "cyan",
     },
     {
       id: "feature-security",
       icon: "ShieldCheck",
-      title: "100% Secure & Legal",
+      title: "100% Aman & Legal",
       description:
-        "Rest easy. All digital vouchers, game credits, and top-ups are officially sourced, guaranteeing complete safety for your account.",
+        "Tenang saja. Semua voucher digital, kredit game, dan top-up bersumber dari jalur resmi, menjamin keamanan penuh untuk akun Anda.",
       accent: "electric",
     },
     {
       id: "feature-support",
       icon: "Headphones",
-      title: "24/7 Priority Support",
+      title: "Dukungan Prioritas 24/7",
       description:
-        "Need help validating a transaction? Our customer support operates around the clock to guide you through any issue.",
+        "Butuh bantuan memvalidasi transaksi? Dukungan pelanggan kami beroperasi sepanjang waktu untuk memandu Anda menyelesaikan masalah apa pun.",
       accent: "sky",
     },
     {
       id: "feature-payment",
       icon: "Wallet",
-      title: "Local Payments",
+      title: "Pembayaran Lokal",
       description:
-        "Pay seamlessly using QRIS, local Indonesian e-wallets (Dana, GoPay, OVO), or Virtual Accounts (VA) with zero hassle.",
+        "Bayar dengan mudah menggunakan QRIS, e-wallet lokal Indonesia (Dana, GoPay, OVO), atau Virtual Account (VA) tanpa ribet.",
       accent: "cyan",
     },
   ];
@@ -49,14 +49,14 @@ export default function AboutSection() {
         <div className="mx-auto max-w-3xl text-center mb-20">
           <FadeIn>
             <p className="mb-3 text-sm font-medium uppercase tracking-widest neon-text-blue">
-              The BowPrime Advantage
+              Keunggulan BowPrime
             </p>
             <Heading level={2} className="mb-4">
-              Your Ultimate Safe Haven for{" "}
-              <span className="neon-text-gradient">Gaming Top-Ups</span>
+              Tempat Teraman Terbaik untuk{" "}
+              <span className="neon-text-gradient">Top-Up Game Anda</span>
             </Heading>
             <p className="text-base leading-relaxed text-white/55">
-              BowPrime functions as a seamless secure portal that bridges you to three specialized platforms. We optimize safety, convenience, and transaction speeds under a state-of-the-art cyberpunk interface.
+              BowPrime berfungsi sebagai portal aman dan mulus yang menjembatani Anda ke tiga platform spesialis. Kami mengoptimalkan keamanan, kenyamanan, dan kecepatan transaksi di bawah antarmuka cyberpunk yang canggih.
             </p>
           </FadeIn>
         </div>

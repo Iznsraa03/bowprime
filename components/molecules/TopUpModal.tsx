@@ -113,7 +113,7 @@ export default function TopUpModal({ store, onClose }: TopUpModalProps) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Subtle top highlight */}
-        <div className="absolute inset-x-0 top-0 h-px rounded-t-2xl bg-gradient-to-r from-transparent via-[#00d4ff]/60 to-transparent" />
+        <div className="absolute inset-x-0 top-0 h-px rounded-t-2xl bg-linear-to-r from-transparent via-[#00d4ff]/60 to-transparent" />
 
         <div className="rounded-2xl p-6 space-y-5">
 

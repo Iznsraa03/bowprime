@@ -13,15 +13,14 @@ export default function TestimonialsSection() {
         {/* Section header — fade in from below */}
         <FadeIn className="mx-auto max-w-2xl text-center">
           <p className="mb-3 text-sm font-medium uppercase tracking-widest neon-text-blue">
-            Testimonials
+            Testimoni
           </p>
           <Heading level={2} className="mb-4">
-            Loved by{" "}
-            <span className="neon-text-gradient">Customers</span>
+            Dicintai oleh{" "}
+            <span className="neon-text-gradient">Pelanggan</span>
           </Heading>
           <p className="text-base leading-relaxed text-white/50">
-            See what our customers have to say about their shopping experience
-            across our three stores.
+            Lihat apa yang pelanggan kami katakan tentang pengalaman belanja mereka di ketiga toko kami.
           </p>
         </FadeIn>
 

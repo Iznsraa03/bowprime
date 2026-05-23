@@ -4,9 +4,9 @@ import Heading from "@/components/atoms/Heading";
 import FadeIn from "@/components/atoms/FadeIn";
 
 export const metadata = {
-  title: "Specialized Stores — BowPrime",
+  title: "Toko Spesialis — BowPrime",
   description:
-    "Choose your specialized store to top-up mobile games, buy PC/console vouchers, or grab entertainment gift cards.",
+    "Pilih toko khusus Anda untuk top-up game mobile, beli voucher PC/konsol, atau dapatkan kartu hadiah hiburan.",
 };
 
 export default function StoresPage() {
@@ -20,14 +20,14 @@ export default function StoresPage() {
         <div className="relative mx-auto w-full max-w-7xl px-6 lg:px-8 text-center mb-10">
           <FadeIn className="mx-auto max-w-2xl">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest neon-text-blue">
-              Our Portals
+              Portal Kami
             </p>
             <Heading level={1} className="mb-4">
-              Choose Your{" "}
-              <span className="neon-text-gradient">Specialized Store</span>
+              Pilih Toko{" "}
+              <span className="neon-text-gradient">Spesialis Anda</span>
             </Heading>
             <p className="text-base leading-relaxed text-white/55">
-              Select one of our specialized digital top-up stores below. You will be redirected instantly and securely to complete your gaming or streaming transactions.
+              Pilih salah satu toko khusus top-up digital kami di bawah ini. Anda akan diarahkan secara instan dan aman untuk menyelesaikan transaksi game atau streaming Anda.
             </p>
           </FadeIn>
         </div>

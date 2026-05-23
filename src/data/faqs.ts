@@ -3,39 +3,39 @@ import { FAQ } from "@/src/types";
 const faqs: FAQ[] = [
   {
     id: "faq-1",
-    question: "What is BowPrime?",
+    question: "Apa itu BowPrime?",
     answer:
-      "BowPrime is a premium gaming and digital voucher hub. We aggregate and redirect you to three highly specialized online top-up stores — BowPrime Mobile, BowPrime PC & Console, and BowPrime Digital Hub — to ensure you get the absolute best rates, speeds, and reliability.",
+      "BowPrime adalah pusat voucher digital dan gaming premium. Kami menyatukan dan mengarahkan Anda ke tiga toko top-up online khusus — BowPrime Mobile, BowPrime PC & Console, dan BowPrime Digital Hub — untuk memastikan Anda mendapatkan harga, kecepatan, dan keandalan terbaik.",
   },
   {
     id: "faq-2",
-    question: "How fast are top-ups delivered?",
+    question: "Seberapa cepat top-up diproses?",
     answer:
-      "Extremely fast! Over 99% of top-up purchases are processed and credited directly to your gaming UID or delivered to your email inbox within 1 to 5 minutes after payment confirmation.",
+      "Sangat cepat! Lebih dari 99% pembelian top-up diproses dan dikreditkan langsung ke UID game Anda atau dikirim ke email Anda dalam waktu 1 hingga 5 menit setelah konfirmasi pembayaran.",
   },
   {
     id: "faq-3",
-    question: "What payment methods are supported?",
+    question: "Metode pembayaran apa saja yang didukung?",
     answer:
-      "Each of our specialized redirect stores supports a wide array of payment gateways including popular local E-Wallets (GoPay, OVO, ShopeePay, DANA), Virtual Accounts, Credit/Debit Cards, and instant QRIS payments.",
+      "Setiap toko khusus kami mendukung berbagai gerbang pembayaran termasuk E-Wallet lokal populer (GoPay, OVO, ShopeePay, DANA), Virtual Account, Kartu Kredit/Debit, dan pembayaran QRIS instan.",
   },
   {
     id: "faq-4",
-    question: "Are these top-up stores safe and legal?",
+    question: "Apakah toko top-up ini aman dan legal?",
     answer:
-      "Yes, absolutely. All three stores within the BowPrime ecosystem operate using official distributor links, meaning all diamonds, game points, and vouchers are 100% legal, safe, and secure from account bans.",
+      "Ya, tentu saja. Ketiga toko dalam ekosistem BowPrime beroperasi menggunakan jalur distributor resmi, yang berarti semua diamond, poin game, dan voucher 100% legal, aman, dan bebas dari risiko ban akun.",
   },
   {
     id: "faq-5",
-    question: "Do I need a unified account to make a purchase?",
+    question: "Apakah saya memerlukan akun terdaftar untuk melakukan pembelian?",
     answer:
-      "No account is required! You can top up instantly as a guest. Simply enter your Player ID/email on the redirect store, select your package, pay, and receive your items instantly.",
+      "Tidak memerlukan akun! Anda dapat langsung melakukan top-up sebagai tamu. Cukup masukkan ID Pemain/email Anda di toko tujuan, pilih paket Anda, bayar, dan terima item Anda secara instan.",
   },
   {
     id: "faq-6",
-    question: "What should I do if my top-up is delayed?",
+    question: "Apa yang harus saya lakukan jika top-up saya tertunda?",
     answer:
-      "If your top-up hasn't arrived within 15 minutes, please reach out directly to the support team of the specific redirect store where you made the purchase, or contact BowPrime general support at support@bowprime.com.",
+      "Jika top-up Anda belum masuk dalam waktu 15 menit, silakan hubungi langsung tim dukungan dari toko tujuan tempat Anda melakukan pembelian, atau hubungi dukungan umum BowPrime di support@bowprime.com.",
   },
 ];
 

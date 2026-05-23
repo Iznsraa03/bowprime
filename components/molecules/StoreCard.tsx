@@ -87,7 +87,7 @@ export default function StoreCard({ store, className, onOpenModal }: StoreCardPr
           </button>
         ) : (
           <Button href={store.url} variant="outline" size="sm">
-            Visit Store
+            Kunjungi Toko
             <Icon
               name="ArrowUpRight"
               size={14}

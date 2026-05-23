@@ -21,11 +21,11 @@ export default function FaqSection() {
             FAQ
           </p>
           <Heading level={2} className="mb-4">
-            Frequently Asked{" "}
-            <span className="neon-text-gradient">Questions</span>
+            Pertanyaan yang Sering{" "}
+            <span className="neon-text-gradient">Diajukan</span>
           </Heading>
           <p className="text-base leading-relaxed text-white/50">
-            Everything you need to know about BowPrime and our stores.
+            Semua yang perlu Anda ketahui tentang BowPrime dan toko kami.
           </p>
         </FadeIn>
 
