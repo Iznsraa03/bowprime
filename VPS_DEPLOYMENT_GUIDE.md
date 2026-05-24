@@ -168,7 +168,7 @@ Tempelkan konfigurasi reverse proxy berikut (Ganti `domainanda.com` dan `www.dom
 ```nginx
 server {
     listen 80;
-    server_name domainanda.com www.domainanda.com;
+    server_name bowprime.id www.bowprime.id;
 
     location / {
         proxy_pass http://localhost:3000;
@@ -201,7 +201,7 @@ sudo nginx -t
 ### 11. Pasang SSL Let's Encrypt (HTTPS)
 Jalankan Certbot untuk memperoleh SSL gratis dan mengonfigurasi Nginx secara otomatis untuk mengalihkan traffic HTTP ke HTTPS:
 ```bash
-sudo certbot --nginx -d domainanda.com -d www.domainanda.com
+sudo certbot --nginx -d bowprime.id -d www.bowprime.id
 ```
 *Ikuti petunjuk di layar (masukkan email Anda, setujui TOS, dan pilih opsi `2` untuk mengarahkan (redirect) seluruh lalu lintas otomatis ke HTTPS).*
 

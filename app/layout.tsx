@@ -14,15 +14,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BowPrime — Your One-Stop Shopping Hub",
+  title: "BowPrime Coin - Top Up Royal Dream Murah & Terpercaya",
   description:
-    "Discover premium sports gear, curated streetwear, and the latest tech accessories from three distinct stores — all from one place.",
+    "Platform terpadu untuk top up koin emas Royal Dream murah, aman, dan instan. Bandingkan dan beli langsung dari tiga toko terpercaya — Daboy Store, Aloy Store, dan Walid Store.",
   keywords: [
     "BowPrime",
-    "sports gear",
-    "streetwear",
-    "tech accessories",
-    "online shopping",
+    "Top Up Royal Dream",
+    "Royal Dream Coin",
+    "Beli Koin Royal Dream",
+    "Chip Royal Dream Murah",
+    "Daboy Store",
+    "Aloy Store",
+    "Walid Store",
+    "Royal Dream Top Up Instan",
   ],
 };
 
@@ -48,7 +52,7 @@ export default function RootLayout({
             speed={0.5}
           />
         </div>
-        
+
         <div className="screen-edge-glow" aria-hidden="true" />
         {children}
         {/* Global toast — mounted outside page content, persists across routes */}
