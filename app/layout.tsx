@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "BowPrime",
     images: [
       {
-        url: "/logo/logo.jpeg",
+        url: "https://bowprime.id/logo/logo.jpeg",
         width: 800,
         height: 600,
         alt: "BowPrime Logo",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "BowPrime Coin - Top Up Royal Dream Murah & Terpercaya",
     description:
       "Platform terpadu untuk top up koin emas Royal Dream murah, aman, dan instan. Bandingkan dan beli langsung dari tiga toko terpercaya — Daboy Store, Aloy Store, dan Walid Store.",
-    images: ["/logo/logo.jpeg"],
+    images: ["https://bowprime.id/logo/logo.jpeg"],
   },
 };
 
