@@ -8,7 +8,7 @@ import toastMessages from "@/src/data/toasts";
  * Shows a random toast on mount, auto-dismisses after `duration` ms,
  * then cycles to a new toast after `cooldown` ms.
  */
-export function useToast(duration = 4000, cooldown = 8000) {
+export function useToast(duration = 3000, cooldown = 2000) {
   const [mounted, setMounted] = useState(false);
   const [visible, setVisible] = useState(false);
   const [messageIndex, setMessageIndex] = useState(0); // Deterministic initial state for SSR
@@ -54,6 +54,7 @@ export function useToast(duration = 4000, cooldown = 8000) {
     mounted,
     visible,
     message: toastMessages[messageIndex],
+    duration,
     dismiss,
   };
 }

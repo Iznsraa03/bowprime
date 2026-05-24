@@ -34,6 +34,7 @@ export interface FAQ {
 
 export interface ToastMessage {
   id: string;
-  message: string;
+  userId: string;
+  product: string;
   storeName: string;
 }

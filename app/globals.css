@@ -108,11 +108,6 @@ html {
 body {
   background-color: var(--background);
   color: var(--foreground);
-  /* Deep space mesh background — 3 floating neon orbs (All shades of Blue) */
-  background-image:
-    radial-gradient(ellipse 80% 60% at 10% 15%,  rgba(0, 212, 255, 0.10) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 50% at 85% 25%,  rgba(0, 102, 255, 0.10) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 40% at 50% 80%,  rgba(57, 181, 255, 0.08) 0%, transparent 55%);
 }
 
 @layer base {
@@ -249,6 +244,11 @@ body {
   to   { opacity: 0; transform: translateY(16px) scale(0.96); }
 }
 
+@keyframes toast-progress {
+  from { width: 100%; }
+  to   { width: 0%; }
+}
+
 /* FAQ accordion */
 @keyframes accordion-open {
   from { max-height: 0; opacity: 0; }
@@ -289,6 +289,10 @@ body {
 
 .animate-toast-out {
   animation: toast-out 0.3s ease-in forwards;
+}
+
+.animate-toast-progress {
+  animation: toast-progress linear forwards;
 }
 
 .animate-accordion-open {

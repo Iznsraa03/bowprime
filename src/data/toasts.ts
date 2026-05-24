@@ -3,33 +3,39 @@ import { ToastMessage } from "@/src/types";
 const toastMessages: ToastMessage[] = [
   {
     id: "toast-1",
-    message: "Ahmed baru saja melakukan top-up 500M Royal Dream",
-    storeName: "Daboy Store",
+    userId: "823****",
+    product: "500M Royal Dream",
+    storeName: "Form Daboy",
   },
   {
     id: "toast-2",
-    message: "Siti baru saja membeli 1B Royal Dream",
-    storeName: "Aloy Store",
+    userId: "912****",
+    product: "1B Royal Dream",
+    storeName: "Form Aloy",
   },
   {
     id: "toast-3",
-    message: "Raju baru saja membeli 500M Royal Dream",
-    storeName: "Walid Store",
+    userId: "542****",
+    product: "500M Royal Dream",
+    storeName: "Form Walid",
   },
   {
     id: "toast-4",
-    message: "Lisa baru saja melakukan top-up 200M Royal Dream",
-    storeName: "Aloy Store",
+    userId: "731****",
+    product: "200M Royal Dream",
+    storeName: "Form Aloy",
   },
   {
     id: "toast-5",
-    message: "Kevin baru saja membeli 300M Royal Dream",
-    storeName: "Daboy Store",
+    userId: "854****",
+    product: "300M Royal Dream",
+    storeName: "Form Daboy",
   },
   {
     id: "toast-6",
-    message: "Maya baru saja membeli 2B Royal Dream",
-    storeName: "Walid Store",
+    userId: "298****",
+    product: "2B Royal Dream",
+    storeName: "Form Walid",
   },
 ];
 

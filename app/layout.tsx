@@ -26,6 +26,8 @@ export const metadata: Metadata = {
   ],
 };
 
+import Aurora from "@/components/atoms/Aurora";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -36,7 +38,17 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-black text-white">
+      <body className="min-h-full flex flex-col bg-black text-white relative">
+        {/* Fixed background component */}
+        <div className="fixed inset-0 z-[-1] pointer-events-none">
+          <Aurora
+            colorStops={["#00d4ff", "#0066ff", "#39b5ff"]}
+            blend={0.5}
+            amplitude={1.0}
+            speed={0.5}
+          />
+        </div>
+        
         <div className="screen-edge-glow" aria-hidden="true" />
         {children}
         {/* Global toast — mounted outside page content, persists across routes */}
