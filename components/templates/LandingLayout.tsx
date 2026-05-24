@@ -31,7 +31,7 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
               />
             </div>
             <span className="text-base font-semibold text-white tracking-tight">
-              Bow<span className="neon-text-gradient">Prime</span>
+              Bow<span className="neon-text-gradient">Prime Koin</span>
             </span>
           </Link>
 

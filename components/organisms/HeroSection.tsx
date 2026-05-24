@@ -43,20 +43,6 @@ export default function HeroSection() {
                 Jelajahi Toko
               </Button>
             </div>
-
-            {/* Stats row */}
-            <div className="mt-12 flex gap-8">
-              {[
-                { label: "Toko Spesialis", value: "3" },
-                { label: "Game Didukung", value: "100+" },
-                { label: "Tingkat Keberhasilan", value: "99.9%" },
-              ].map((stat) => (
-                <div key={stat.label}>
-                  <p className="text-2xl font-bold neon-text-gradient">{stat.value}</p>
-                  <p className="text-xs text-white/40 mt-0.5">{stat.label}</p>
-                </div>
-              ))}
-            </div>
           </div>
 
           {/* Right — Carousel with glass frame */}
