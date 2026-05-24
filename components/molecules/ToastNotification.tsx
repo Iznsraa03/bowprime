@@ -1,13 +1,30 @@
 "use client";
-
+import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/useToast";
 import { ShoppingBag, X } from "lucide-react";
 
 export default function ToastNotification() {
   const { visible, message, duration, dismiss, mounted } = useToast();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  if (!mounted || !message) return null;
+  useEffect(() => {
+    // Check if there is already a dialog open in the DOM
+    const hasModal = !!document.querySelector('[role="dialog"]');
+    setIsModalOpen(hasModal);
+
+    const handleModalToggle = (e: Event) => {
+      const customEvent = e as CustomEvent<{ open: boolean }>;
+      setIsModalOpen(customEvent.detail?.open ?? false);
+    };
+
+    window.addEventListener("modal-toggle", handleModalToggle);
+    return () => {
+      window.removeEventListener("modal-toggle", handleModalToggle);
+    };
+  }, []);
+
+  if (!mounted || !message || isModalOpen) return null;
 
   return (
     <div

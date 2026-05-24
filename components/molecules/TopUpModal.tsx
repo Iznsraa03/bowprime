@@ -56,7 +56,11 @@ export default function TopUpModal({ store, onClose }: TopUpModalProps) {
   // Prevent background scroll while modal open
   useEffect(() => {
     document.body.style.overflow = "hidden";
-    return () => { document.body.style.overflow = ""; };
+    window.dispatchEvent(new CustomEvent("modal-toggle", { detail: { open: true } }));
+    return () => {
+      document.body.style.overflow = "";
+      window.dispatchEvent(new CustomEvent("modal-toggle", { detail: { open: false } }));
+    };
   }, []);
 
   const canProceed = selectedPkg && gameId.trim().length > 0 && userWhatsapp.trim().length > 0;
