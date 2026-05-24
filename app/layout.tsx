@@ -28,6 +28,29 @@ export const metadata: Metadata = {
     "Walid Store",
     "Royal Dream Top Up Instan",
   ],
+  openGraph: {
+    title: "BowPrime Coin - Top Up Royal Dream Murah & Terpercaya",
+    description:
+      "Platform terpadu untuk top up koin emas Royal Dream murah, aman, dan instan. Bandingkan dan beli langsung dari tiga toko terpercaya — Daboy Store, Aloy Store, dan Walid Store.",
+    url: "https://bowprime.id",
+    siteName: "BowPrime",
+    images: [
+      {
+        url: "/logo/logo.jpeg",
+        width: 800,
+        height: 600,
+        alt: "BowPrime Logo",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BowPrime Coin - Top Up Royal Dream Murah & Terpercaya",
+    description:
+      "Platform terpadu untuk top up koin emas Royal Dream murah, aman, dan instan. Bandingkan dan beli langsung dari tiga toko terpercaya — Daboy Store, Aloy Store, dan Walid Store.",
+    images: ["/logo/logo.jpeg"],
+  },
 };
 
 import Aurora from "@/components/atoms/Aurora";
